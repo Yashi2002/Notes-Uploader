@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Uploader</title>
+    <link rel='stylesheet'href='/stylesheets/style.css'/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Notes Uploader</a>
+          </div>
+          <ul class="nav-navbar-nav">
+            <li id="li"><a href="Note">Notes</a></li>
+            <li id="li"><a href="upload">Upload</a></li>
+            <li><a href="#">Qn Bank</a></li>
+            <li><a href="#">Solutions</a></li>
+          </ul>
+        </div>
+      </nav>
+<div class="container">
+    <h2>TakeYour Time and read notes.</h2>
+    <div class="row">
+        <% allNotes.forEach((note, index)=> { %>
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <a href="/images/Pdf.png" target="_blank">
+            <img src="/images/Folder.png" alt="<%= note.Semesters%>" style="width:100%">
+            <div class="caption">
+              <p><%= note.Semesters%> </p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <%})%>
+    </div>
+ </div>
+ 
+    
+</body>
+</html>

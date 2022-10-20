@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes Uploader</title>
+    <link rel='stylesheet'href='/stylesheets/style.css'/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Notes Uploader</a>
+          </div>
+          <ul class="nav-navbar-nav">
+            <li id="li"><a href="Note">Notes</a></li>
+            <li id="li"><a href="upload">Upload</a></li>
+            <li><a href="#">Qn Bank</a></li>
+            <li><a href="#">Solutions</a></li>
+          </ul>
+        </div>
+    </nav>
+      
+      <div class="container">
+        <h2>Now, Why don't you upload notes and help others.</h2>
+        <form method = "post" action="/upload1" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="subject">Subject:</label>
+            <input type="text" class="form-control" id="subject" placeholder="Enter subject" name="subject">
+          </div>
+         
+          <select class="form-control form-control-lg" name="Semesters">
+            <option>Select Semesters</option>
+            <option>1st Sem</option>
+            <option>2nd Sem</option>
+            <option>3rd Sem</option>
+            <option>4th Sem</option>
+            <option>5th Sem</option>
+            <option>6th Sem</option>
+            <option>7th Sem</option>
+            <option>8th Sem</option>
+          </select>
+          
+          <h3>Upload your Files Here.</h3>
+    
+    <input type="file" id="image" name="image">
+    <p></p>
+    <button class="upload-button" type="submit">Upload</button>
+    
+    </form>
+       
+      </div>
+
+    
+  
+    
+</body>
+</html>
