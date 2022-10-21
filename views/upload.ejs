@@ -1,3 +1,4 @@
+<!-- <%- include navbar.ejs%> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,38 +13,49 @@
     
 </head>
 <body>
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">Notes Uploader</a>
-          </div>
-          <ul class="nav-navbar-nav">
-            <li id="li"><a href="Note">Notes</a></li>
-            <li id="li"><a href="upload">Upload</a></li>
-            <li><a href="#">Qn Bank</a></li>
-            <li><a href="#">Solutions</a></li>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Notes Uploader</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Notes<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li id ="li"><a href="Sem-1">Semester-1</a></li>
+            <li id ="li"><a href="Sem-2">Semester-2</a></li>
+            <li id ="li"><a href="Sem-3">Semester-3</a></li>
+            <li id ="li"><a href="Sem-4">Semester-4</a></li>
+            <li id ="li"><a href="Sem-5">Semester-5</a></li>
+            <li id ="li"><a href="Sem-6">Semester-6</a></li>
+            <li id ="li"><a href="Sem-7">Semester-7</a></li>
+            <li id ="li"><a href="Sem-8">Semester-8</a></li>
           </ul>
-        </div>
-    </nav>
-      
+        </li>
+        <li id ="li"><a href="upload">Upload</a>
+        <li><a href="#">Qn bank</a></li>
+        <li><a href="#">Solution</a></li>
+      </ul>
+    </div>
+  </nav>
+
       <div class="container">
         <h2>Now, Why don't you upload notes and help others.</h2>
         <form method = "post" action="/upload1" enctype="multipart/form-data">
           <div class="form-group">
-            <label for="subject">Subject:</label>
+            <label for="subject">Subject</label>
             <input type="text" class="form-control" id="subject" placeholder="Enter subject" name="subject">
           </div>
          
           <select class="form-control form-control-lg" name="Semesters">
             <option>Select Semesters</option>
-            <option>1st Sem</option>
-            <option>2nd Sem</option>
-            <option>3rd Sem</option>
-            <option>4th Sem</option>
-            <option>5th Sem</option>
-            <option>6th Sem</option>
-            <option>7th Sem</option>
-            <option>8th Sem</option>
+            <option>Semester-1</option>
+            <option>Semester-2</option>
+            <option>Semester-3</option>
+            <option>Semester-4</option>
+            <option>Semester-5</option>
+            <option>Semester-6</option>
+            <option>Semester-7</option>
+            <option>Semester-8</option>
           </select>
           
           <h3>Upload your Files Here.</h3>

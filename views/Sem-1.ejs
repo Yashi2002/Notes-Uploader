@@ -38,13 +38,24 @@
     </div>
   </nav>
 
-    <div class="content-items">
-        <img src="/images/Homepage.jpeg"alt="">
-        
-        
+<div class="container">
+    <h2>TakeYour Time and read notes.</h2>
+    <div class="row">
+        <% allNotes.forEach((note, index)=> { %>
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <!-- <a href="/images/<%= note.pdfPath %>" target="_blank"> -->
+            <img src="/images/<%= note.pdfPath %>"  style="width:100%">
+            <div class="caption">
+              <p><%= note.subject %></p>
+            </div>
+          <!-- </a> -->
+        </div>
+      </div>
+      <% }) %>
     </div>
-    
-    
+ </div>
+ 
     
 </body>
 </html>

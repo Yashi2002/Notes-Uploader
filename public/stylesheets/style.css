@@ -27,7 +27,7 @@ nav{
   text-transform: uppercase;
   letter-spacing: 1.5px;
 } */
-nav .navbar-header{
+nav .navbar-brand{
   font-size: 50px;
   font-weight: bold;
   float: left;
