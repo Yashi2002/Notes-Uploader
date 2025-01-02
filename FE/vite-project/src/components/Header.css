@@ -1,0 +1,78 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #7a56d6, #c76de4); /* Soft purple to pink gradient */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Glow effect */
+  }
+  
+  p {
+    font-size: 1.5rem;
+    color: #f3e6ff; /* Soft lavender */
+    margin-bottom: 2rem;
+    text-align:center;
+    letter-spacing: 1px;
+    max-width: 500px;
+    line-height: 1.6;
+  }
+  
+  /* Navigation Styles */
+  nav {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fff;
+    background: linear-gradient(135deg, #b87bff, #ff7ae2); /* Gradient buttons */
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    font-weight: 600;
+  }
+  
+  nav a:hover {
+    background: linear-gradient(135deg, #ff7ae2, #b87bff); /* Reversed gradient on hover */
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  nav a:active {
+    transform: translateY(0); /* Smooth active state */
+  }
+  
+  /* Adding a subtle animation to the body for a fancy intro */
+  @keyframes intro {
+    0% {
+      transform: scale(1.1);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  body {
+    animation: intro 1s ease-out forwards;
+  }
+  

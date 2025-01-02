@@ -1,0 +1,122 @@
+/* Container */
+.notes-list {
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+  margin: auto;
+  max-width: 1200px;
+  height: 80vh; /* Set a height for the scrollable area */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+}
+
+/* Main Header */
+.notes-list h1 {
+  color: #4b3d61;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Grid Layout for Notes */
+.notes-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+/* Note Card */
+.note-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.note-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Header */
+.note-card h2 {
+  font-size: 1.8rem;
+  color: #5a5c71;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #eceff1;
+  padding-bottom: 0.5rem;
+}
+
+/* Notes List in Cards */
+.note-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.note-card li {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background: #f1f3f5;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.note-card li:hover {
+  background: #e2e8f0;
+}
+
+/* Note Links */
+.note-card a {
+  text-decoration: none;
+  color: #7a56d6;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.note-card a:hover {
+  color: #9a78f0;
+  text-decoration: underline;
+}
+
+/* Empty Notes Message */
+.empty-notes {
+  color: #999;
+  font-style: italic;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .notes-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .note-card {
+    max-width: 90%;
+  }
+
+  .note-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .notes-list h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .note-card {
+    padding: 1rem;
+  }
+
+  .note-card h2 {
+    font-size: 1.3rem;
+  }
+
+  .notes-list h1 {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,73 @@
+/* Container */
+.upload-note {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 400px;
+    text-align: center;
+    margin: auto;
+  }
+  
+  /* Heading */
+  .upload-note h2 {
+    color: #4b3d61;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  /* Form */
+  .upload-note form div {
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+  
+  .upload-note label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .upload-note input[type="file"],
+  .upload-note select {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f8f9fa;
+  }
+  
+  .upload-note button {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    color: #fff;
+    background: linear-gradient(135deg, #7a56d6, #b287f7);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .upload-note button:hover {
+    background: linear-gradient(135deg, #b287f7, #7a56d6);
+    transform: translateY(-3px);
+  }
+  
+  .upload-note button:active {
+    transform: translateY(0);
+  }
+  
+  /* Message */
+  .upload-note p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #6a4cfc;
+    font-weight: 500;
+  }
+  
